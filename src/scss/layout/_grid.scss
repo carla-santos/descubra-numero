@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.container {
+  min-height: 100%;
+  @include m.grid(1, 94%);
+  place-content: center;
+}
+
+@include m.d(md) {
+  .container {
+    @include m.grid(1, 100%);
+    place-content: unset;
+  }
+}

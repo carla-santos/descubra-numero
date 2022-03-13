@@ -1,0 +1,106 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+%flex-center {
+  @include m.flex(column);
+  @include m.flex-complete-center();
+  padding: 4rem 2rem;
+}
+
+@include m.d(md) {
+  %flex-center {
+    padding: 2rem 0;
+  }
+}
+
+.main {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: v.$border-radius;
+  overflow: hidden;
+  @include m.grid(2, 1fr);
+}
+
+@include m.d(md) {
+  .main {
+    @include m.grid(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: unset;
+  }
+}
+
+.description {
+  background-color: v.$color-grey-light-3;
+  @extend %flex-center;
+
+  &__info {
+    background-color: v.$color-grey-light-1;
+    border-radius: v.$border-radius;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 0 3rem 4rem;
+    animation: moveBottom 1s 0.8s backwards;
+
+    @include m.d(md) {
+      font-size: 1.8rem;
+      margin: 0 3rem 3rem;
+    }
+  }
+}
+
+.game {
+  background-color: v.$color-grey-light-4;
+  @extend %flex-center;
+
+  &__number {
+    background-color: v.$color-grey-light-2;
+    border: 5px dashed currentColor;
+    font-size: 6.4rem;
+    font-weight: 700;
+    width: 15rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__msg {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    color: v.$color-primary;
+
+    @include m.d(md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 4.8rem;
+    @include m.flex(row, 2rem);
+
+    &-input {
+      border: none;
+      border-radius: v.$border-radius;
+      font-size: 2.8rem;
+      outline: none;
+      width: 12rem;
+      height: 8rem;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+
+  &__score {
+    font-size: 2.4rem;
+    font-weight: 700;
+    @include m.flex(row, 3.6rem);
+
+    @include m.d(md) {
+      padding-bottom: 1.2rem;
+    }
+  }
+}
+
+.score,
+.highscore {
+  color: v.$color-primary;
+}

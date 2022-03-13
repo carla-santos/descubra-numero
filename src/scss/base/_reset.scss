@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: v.$font-size-base;
+  box-sizing: border-box;
+}
+
+@include m.d(lg) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: v.$color-grey-dark-2;
+  font-family: v.$font-family-body;
+  font-size: v.$font-size-body;
+  font-weight: v.$font-weight-normal;
+  line-height: v.$line-height-base;
+  background-image: linear-gradient(to right bottom, v.$color-primary, v.$color-primary-light);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+[role='button'] {
+  cursor: pointer;
+}

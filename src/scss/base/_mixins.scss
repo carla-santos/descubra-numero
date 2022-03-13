@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+@mixin d($size) {
+  @media only screen and (max-width: map-get(v.$devices, $size)) {
+    @content;
+  }
+}
+
+@mixin container($width: 100%) {
+  max-width: v.$max-width-container;
+  width: $width;
+}
+
+@mixin flex($flex-direction: null, $gutter: null) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $flex-direction;
+  gap: $gutter;
+}
+
+@mixin flex-complete-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid($cols: null, $size: null, $space: null) {
+  display: grid;
+  grid-template-columns: repeat($cols, $size);
+  gap: $space;
+}

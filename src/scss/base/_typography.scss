@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+%heading {
+  line-height: v.$line-height-sm;
+}
+
+.heading-primary {
+  font-size: v.$font-size-h1;
+  @extend %heading;
+  color: v.$color-primary;
+  animation: moveLeft 1s ease-out;
+}
+
+@include m.d(lg) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+}
+
+.heading-secondary {
+  font-size: v.$font-size-h2;
+  @extend %heading;
+  color: v.$color-grey-dark-2;
+  margin: 2rem 0;
+  animation: moveRight 1s ease-out;
+}
+
+@include m.d(lg) {
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+}

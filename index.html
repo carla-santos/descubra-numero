@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo - Descubra o número</title>
+    <meta
+      name="description"
+      content="O jogo Descubra o número consiste em tentar adivinhar um número escondido entre 1 a 20."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="build/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <main class="main">
+        <section class="description">
+          <h1 class="heading-primary">Descubra o número!</h1>
+          <h2 class="heading-secondary">Como se joga?</h2>
+
+          <div class="description__info">
+            <p>
+              O jogo consiste em tentar adivinhar um número escondido entre 1 a 20. Esses números são gerados
+              aleatoriamente nesse intervalo, o objetivo é adivinhar no menor número possível de tentativas e assim
+              obter a maior pontuação final.
+            </p>
+          </div>
+
+          <button
+            class="btn btn--again btn--animation js-btn--again"
+            type="button"
+            role="button"
+            data-content="Jogar novamente"
+          >
+            Jogar novamente
+          </button>
+        </section>
+
+        <section class="game">
+          <div class="game__number js-number">?</div>
+          <p class="game__msg js-score__msg">Comece o jogo...</p>
+
+          <div class="game__checkbox">
+            <input class="game__checkbox-input js-checkbox-input" type="number" min="1" />
+            <button class="btn btn--check js-btn--check" role="button" data-content="Verifique">Verifique!</button>
+          </div>
+
+          <div class="game__score">
+            <p class="game__score-label">🎮 Pontos: <span class="score">20</span></p>
+            <p class="game__score-highscore">🏆 Record: <span class="highscore">0</span></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__description">Desenvolvido por <span>Carla Santos</span></p>
+        <ul class="footer__social">
+          <li>
+            <a href="https://github.com/carla-santos" target="_blank" rel="noreferrer noopener">
+              <img src="img/github.png" alt="Logo do Github" />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="build/js/main.js"></script>
+  </body>
+</html>

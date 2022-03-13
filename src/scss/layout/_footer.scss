@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+  background-color: v.$color-white;
+  font-size: 1.8rem;
+  margin-top: -1.6rem;
+  padding: 2.4rem 4.8rem;
+  @include m.flex(row, 1rem);
+  @include m.flex-complete-center;
+
+  @include m.d(md) {
+    padding: 1.6rem;
+  }
+
+  &__description span {
+    color: v.$color-primary;
+    font-weight: 700;
+  }
+
+  &__social {
+    list-style: none;
+    padding: 0;
+
+    & li {
+      transition: transform 0.4s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

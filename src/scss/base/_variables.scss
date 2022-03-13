@@ -1,0 +1,44 @@
+// Cores
+$color-primary: #610972;
+$color-primary-light: #c09dc7;
+$color-primary-dark: #440650;
+
+$color-grey-light-1: #eee;
+$color-grey-light-2: #eceeec;
+$color-grey-light-3: #dbd6d6;
+$color-grey-light-4: #cbcfcb;
+
+$color-grey-dark-2: #221f1f;
+
+$color-white: #fff;
+
+// Tipografia
+$font-family-body: 'Roboto Condensed', sans-serif;
+$font-size-base: 62.5%;
+$font-size-body: 1.6rem;
+$font-weight-normal: 400;
+$line-height-base: 1.5;
+$line-height-sm: 1;
+$line-height-lg: 1.8;
+$letter-spacing-base: 1.2px;
+$letter-spacing-sm: -0.7px;
+
+// heading
+$font-size-h1: 4rem;
+$font-size-h2: 3rem;
+
+// Bordas
+$border-radius-50: 50%;
+$border-radius: 1rem;
+
+// Media queries
+$devices: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+);
+
+// Grid
+$max-width-container: 120rem;
+$grid-gutter: 2rem;
