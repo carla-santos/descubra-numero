@@ -25,7 +25,9 @@
 
 [![Screenshot](https://github.com/carla-santos/descubra-numero/blob/main/img/desktop.png)](https://descubra-numero.netlify.app/)
 
-**Descubra o número** é um jogo de adivinhação cujo objetivo é acertar o menor número possível de tentativas. Possui um design estilo 'retro' e foi desenvolvido em Javascript.
+**Descubra o número** é um jogo de adivinhação cujo objetivo é acertar o menor número possível de tentativas. Possui um design estilo 'retro'. 
+Foi desenvolvido com base no curso [The Complete JavaScript Course 2022: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/)
+do professor **Jonas Schmedtmann** como uma forma de praticar **HTML5, CSS3 e Javascript.**
 
 - Utilizei como base [7-1 architecture pattern](https://github.com/KittyGiraudel/sass-boilerplate) para criar os arquivos do SASS dentro do diretório **src/scss**. Lá consta um arquivo principal chamado **main.scss** que tem a função de importar os arquivos parciais dentro de sua respectiva pasta.
 - Em cada pasta, consta um arquivo **index.scss** que lista cada um dos outros arquivos, no mesmo diretório, que vão ser incluídos na importação.
@@ -142,6 +144,7 @@ Meus outros links: [https://github.com/carla-santos](https://github.com/carla-sa
 - [SASS guidelin](https://sass-guidelin.es/#architecture)
 - [CSS-Tricks](https://css-tricks.com/introducing-sass-modules/)
 - [Font Awesome](https://fontawesome.com)
+- [Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/)
 
 ---
 
